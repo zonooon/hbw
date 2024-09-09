@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    outline: none;
+}
+body{
+    background-color: rgb(245, 235, 220);
+    font-size: 16px;
+}
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    width:100% ;
+}
+.top{
+    width: 100%;
+    padding: 1rem;
+}
+.center{
+    margin: 0 auto;
+}
+.header>.top>ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    /*background-color: pink;*/
+}
+
+.header>.top>ul>li{
+    list-style-type: none;
+    font-size: 2rem;
+    font-family: "Google-font";
+    padding:0 1rem ;
+    height: inherit;
+    color: #502314;
+    transition: color 0.2s ease;
+
+}
+.header>.top>ul>li.logo{
+    background: url("../image/10017.png") no-repeat center center;
+    background-size: 11.6rem  11.7rem;
+    width: 19.5rem;
+    height: 100%;
+    position: relative;
+}
+.header>.top>ul>li.logo a{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+.header>.top>ul>.active{
+    color:rgb(234, 0, 0) ;
+}
+.header>.top>ul>li>a{
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    line-height: 18rem;
+    font-weight: bold;
+}
+.header>.top>ul>li:hover{
+    color:rgb(234, 0, 0) ;
+}
+.header>.banner{
+    width: 100%;
+    display: inline-block;
+    /*background-color: pink;*/
+    position: relative;
+}
+.header>.banner>.warp{
+    width: 192rem;
+    height: 65.7rem;
+    position: relative;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header>.banner>.warp>ul{
+    display: flex;
+}
+
+.header>.banner>.warp>ul>.hide{
+    /*overflow: hidden;*/
+}
+ul.btn li{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    background-color: rgb(196, 181, 167);
+    text-align: center;
+    line-height: 4rem;
+    color: white;
+    border-radius: 50%;
+    font-size: 4rem;
+    list-style: none;
+
+}
+ul.btn>.btn_left{
+    transform: translate(34rem,-35rem);
+}
+ul.btn>.btn_right{
+    transform: translate(138rem ,-35rem);
+}
+#circle-list{
+   position: absolute;
+    bottom: 2%;
+    left: 50%; /* 将 right 改为 left，并添加负的 margin-left */
+    transform: translateX(-50%); /* 使用 transform 进行水平居中 */
+}
+#circle-list li{
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color:rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    line-height: 2.2rem;
+    text-align: center;
+    margin: 0 6px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    list-style-type: none;
+}
+#circle-list >.active{
+    background-color: rgb(255, 255, 255);
+}
+.main{
+    width: 100%;
+    /*height: 33.4rem;*/
+    /*background-color: peru;*/
+    margin-top: 2%;
+}
+.menu{
+    width: 118rem;
+    height: 79.8rem;
+    /*background-color: green;*/
+    margin:  0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fen_king{
+    width: 118rem;
+    height: 25.8rem;
+    margin: 0 auto;
+    background: url("../image/10020.png") no-repeat;
+}
+.footer{
+    width: 100%;
+    height: 30rem;
+    background: rgb(80, 35, 20);
+    margin-top: 3%;
+    padding-top: 6rem;
+}
+.footer_center{
+    width: 118rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+.footer_nav{
+    float: left;
+}
+.footer_nav>ul>span{
+    display: block;
+    line-height: 4rem;
+    color: white;
+}
+.footer_center ul{
+    display: flex;
+}
+.footer_center ul li{
+    line-height: 4rem;
+    list-style-type: none;
+}
+.footer_center ul li a{
+ text-decoration: none;
+    color: white;
+}
+.footer_nav li:after {
+    content: "";
+    display: inline-block;
+    vertical-align: sub;
+    width: 1px;
+    height: 18px;
+    background: #ffffff;
+    opacity: 0.4;
+    margin: 0 18px;
+}
+.footer_code{
+    float: right;
+    width: 20.2rem;
+    height: inherit;
+    /*background-color: peru;*/
+    background: url("../image/10021.png") no-repeat;
+}
+.footer_info{
+    width: 96rem;
+    height: 16rem;
+    /*background-color: yellow;*/
+    margin:  0 auto;
+}
+.footer_sc1{
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+
+}
+a.gong_an{
+    font-size: 1.47rem;
+    text-decoration: none;
+    color: white;
+}
+a.gong_an img{
+    display: inline-block;
+    height: 4rem;
+    vertical-align: top;
+    border: none;
+}
+.footer_sc2{
+    margin-top: 4rem;
+    text-align: center;
+    /*background-color: white;*/
+    width: 96rem;
+    height: 2.4rem;
+}
+.footer_sc2 span{
+    line-height: 2.4rem;
+    color: white;
+}
+.footer_sc2 span a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+}
